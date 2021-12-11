@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="ro">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <title>TutorialVolei.ro</title>
+
+    <style type="text/css">
+        body {
+            margin: 0;
+        }
+        
+        .container {
+            width: 100vw;
+            height: 100vh;
+            font-size: 20px;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            grid-template-rows: 50px 50px 1fr 50px;
+            gap: 2px;
+            padding: 10px;
+            box-sizing: border-box;
+        }
+        
+        .container div {
+            padding: 10px;
+            border: 1px solid #000000;
+        }
+        
+        .header {
+            grid-column-start: 1;
+            grid-column-end: 5;
+        }
+        
+        img {
+            max-width: 100%;
+            max-height: 100%;
+        }
+        
+        .content-large {
+            grid-column-start: 1;
+            grid-column-end: 5;
+        }
+        
+        .footer {
+            grid-column-start: 1;
+            grid-column-end: 5;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">Inițiere în jocul de volei</div>
+        <div class="header">Bine ai venit pe TutorialVolei.ro, locul unde vei învăța bazele jocului de volei.</div>
+        <div class="content-large">
+            <!-- poza cu terenul de volei peste care vin "jucatorii" asezati -->
+            <img src="teren.jpg" alt="teren volei" srcset="">
+
+            <!-- butoane cu comenzi pentru site (cu numele pozitiilor in teren) -->
+            <!-- trebuie Schimbat din juc1, ..., juc6 in extrema...  etc. -->
+            <a href="juc5.html" class="btn">juc 5</a>
+            <br>
+            <br>
+            <a href="juc4.html" class="btn">juc 4</a>
+            <br>
+            <br>
+            <a href="juc6.html" class="btn">juc 6</a>
+            <br>
+            <br>
+            <a href="juc3.html" class="btn">juc 3</a>
+            <br>
+            <br>
+            <a href="juc1.html" class="btn">juc 1</a>
+            <br>
+            <br>
+            <a href="juc2.html" class="btn">juc 2</a>
+            <br>
+            <br>
+
+            <!-- butoane cu comenzi pentru site -->
+            <a href="generalitati.html" class="btn">Generalități</a>
+            <br>
+            <br>
+            <a href="istorie.html" class="btn">Istorie</a>
+            <br>
+            <br>
+            <a href="succesiuneaActiunilor.html" class="btn">Succesiunea Acțiunilor</a>
+            <br>
+            <br>
+            <a href="exercitii.html" class="btn">Exerciții</a>
+            <br>
+            <br>
+            <a href="asezareInTeren.html" class="btn">Așezare în teren</a>
+            <br>
+            <br>
+            <a href="regulament.html" class="btn">Regulament</a>
+        </div>
+        <div class="footer">Footer</div>
+    </div>
+
+
+</body>
+
+</html>

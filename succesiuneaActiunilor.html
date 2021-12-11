@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ro">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="succesiuneaActiunilor.css">
+    <title>TutorialVolei.ro</title>
+
+    <style type="text/css">
+        body {
+            margin: 0;
+        }
+        
+        .container {
+            width: 100vw;
+            height: 100vh;
+            font-size: 20px;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            grid-template-rows: 50px 50px 1fr 50px;
+            gap: 2px;
+            padding: 10px;
+            box-sizing: border-box;
+        }
+        
+        .container div {
+            padding: 10px;
+            border: 1px solid #000000;
+        }
+        
+        .header {
+            grid-column-start: 1;
+            grid-column-end: 5;
+        }
+        
+        img {
+            max-width: 100%;
+            max-height: 100%;
+        }
+        
+        .content-large {
+            grid-column-start: 1;
+            grid-column-end: 5;
+        }
+        
+        .footer {
+            grid-column-start: 1;
+            grid-column-end: 5;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">Succesiunea actiunilor</div>
+        <div class="header"></div>
+        <div class="content-large"></div>
+        <div class="footer">Footer</div>
+    </div>
+</body>
+
+</html>

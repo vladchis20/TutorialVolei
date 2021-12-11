@@ -1,0 +1,43 @@
+/*.Butoane {
+    background: white;
+    list-style-type: none;
+    float: left;
+    display: block;
+    width: 200px;
+    height: 60px;
+    text-align: center;
+    line-height: 55px;
+    font-family: Tahoma, Geneva, sans-serif;
+    font-size: 17px;
+}
+
+.Butoane:hover {
+    background-color: rgb(148, 25, 25);
+}
+*/
+
+.btn {
+    outline: none;
+    display: block;
+    border: 0;
+    width: 200px;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1;
+    padding: 16px 30px;
+    border-radius: 30px;
+    background: #0081D5;
+    color: #ffffff;
+    cursor: pointer;
+    transition: all 0.3s linear;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.btn:hover,
+.btn:focus {
+    background: #005C99;
+}
+
+.btn:active {
+    background: #003659;
+}
