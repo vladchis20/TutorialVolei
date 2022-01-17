@@ -1,64 +1,219 @@
 <!DOCTYPE html>
-<html lang="ro">
+<html>
+<title>W3.CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body,h1,h2,h3,h4,h5 {font-family: "Poppins", sans-serif}
+body {font-size: 20px;}
+img {margin-bottom: -8px;}
+.mySlides {display: none;}
+</style>
+<body class="w3-content w3-black" style="max-width:1500px;">
 
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="istorie.css">
-    <title>TutorialVolei.ro</title>
-
-    <style type="text/css">
-        body {
-            margin: 0;
-        }
-        
-        .container {
-            width: 100vw;
-            height: 100vh;
-            font-size: 20px;
-            display: grid;
-            grid-template-columns: 1fr 1fr 1fr 1fr;
-            grid-template-rows: 50px 50px 1fr 50px;
-            gap: 2px;
-            padding: 10px;
-            box-sizing: border-box;
-        }
-        
-        .container div {
-            padding: 10px;
-            border: 1px solid #000000;
-        }
-        
-        .header {
-            grid-column-start: 1;
-            grid-column-end: 5;
-        }
-        
-        img {
-            max-width: 100%;
-            max-height: 100%;
-        }
-        
-        .content-large {
-            grid-column-start: 1;
-            grid-column-end: 5;
-        }
-        
-        .footer {
-            grid-column-start: 1;
-            grid-column-end: 5;
-        }
-    </style>
-
-</head>
-
-<body>
-    <div class="container">
-        <div class="header">Istorie</div>
-        <div class="header"></div>
-        <div class="content-large"></div>
-        <div class="footer">Footer</div>
+<!-- Header with Slideshow -->
+<header class="w3-display-container w3-center">
+  <div class="mySlides w3-animate-opacity">
+    <img class="w3-image" src="assets/volleyball-desktop-hd-wallpaper-62557-64529-hd-wallpapers.jpg" alt="Image 1" style="min-width:500px" width="1500" height="1000">
+    <div class="w3-display-left w3-padding w3-hide-small" style="width:35%">
+      <div class="w3-black w3-opacity w3-hover-opacity-off w3-padding-large w3-round-large">
+        <h1 class="w3-xlarge">Istoria voleiului</h1>
+        <hr class="w3-opacity">
+        <p>INVENTAREA JOCULUI DE VOLEI</p>
+       
+      </div>
     </div>
-</body>
+  </div>
+  <div class="mySlides w3-animate-opacity">
+    <img class="w3-image" src="assets/sports-volleyball.jpg" alt="Image 2" style="min-width:500px" width="1500" height="1000">
+    <div class="w3-display-left w3-padding w3-hide-small" style="width:35%">
+      <div class="w3-black w3-opacity w3-hover-opacity-off w3-padding-large w3-round-large">
+        <h1 class="w3-xlarge w3-text-red">Istoria voleiului</h1>
+        <hr class="w3-opacity">
+        <p>INVENTAREA JOCULUI DE VOLEI</p>
+    
+      </div>
+    </div>
+  </div>
+  <div class="mySlides w3-animate-opacity">
+    <img class="w3-image" src="assets/volei_sunset.jfif" alt="Image 3" style="min-width:500px" width="1500" height="1000">
+    <div class="w3-display-left w3-padding w3-hide-small" style="width:35%">
+      <div class="w3-black w3-opacity w3-hover-opacity-off w3-padding-large w3-round-large">
+        <h1 class="w3-xlarge">Istoria voleiului</h1>
+        <hr class="w3-opacity">
+        <p>INVENTAREA JOCULUI DE VOLEI</p>
+    
+      </div>
+    </div>
+  </div>
+  <a class="w3-button w3-black w3-display-right w3-margin-right w3-round w3-hide-small w3-hover-light-grey" onclick="plusDivs(1)"> <i class="fa fa-angle-right"></i></a>
+  <a class="w3-button w3-block w3-black w3-hide-large w3-hide-medium" onclick="plusDivs(1)">Take Tour <i class="fa fa-angle-right"></i></a>
+</header>
 
+<!-- The App Section -->
+<div class="w3-padding-64 w3-white">
+  <div class="w3-row-padding">
+    <div class="w3-col l8 m6">
+      <h1 class="w3-jumbo"><b>ISTORIA JOCULUI DE VOLEI</b></h1>
+      <h1 class="w3-xxxlarge w3-text-green"><b>Cand a inceput totul?</b></h1>
+      <p><span class="w3-xlarge">Istoria de volei Începe în Statele Unite la sfârșitul secolului al XIX-lea.</span> <br>Creatorul său a fost William G. Morgan, instructor de sport la Young Christian Association (YMCA pentru acronimul său în engleză, Asociația Creștină a Tinerilor).
+
+        Obiectivul lui Morgan a fost dezvoltarea unui sport care să amestece elementele altor discipline (baschet, tenis, handbal, printre altele), pentru a crea o nouă disciplină care nu era atât de solicitantă în ceea ce privește rezistența fizică și care scădea contactul fizic între participanți.
+
+    </div>
+    <div class="w3-col l4 m6">
+      <img src="assets/throw_ball.jpg" class="w3-image w3-right w3-hide-small" width="335" height="471">
+      <div class="w3-center w3-hide-large w3-hide-medium">
+        <button class="w3-button w3-block w3-padding-large" onclick="document.getElementById('download').style.display='block'">
+          <i class="fa fa-download"></i> Download Application
+        </button>
+        <img src="assets/throw_ball.jpg" class="w3-image w3-margin-top" width="335" height="471">
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal -->
+<div id="download" class="w3-modal w3-animate-opacity">
+  <div class="w3-modal-content" style="padding:32px">
+    <div class="w3-container w3-white">
+      <i onclick="document.getElementById('download').style.display='none'" class="fa fa-remove w3-xlarge w3-button w3-transparent w3-right w3-xlarge"></i>
+      <h2 class="w3-wide">DOWNLOAD</h2>
+      <p>Download the app in AppStore, Google Play or Microsoft Store.</p>
+      <i class="fa fa-android w3-large"></i> <i class="fa fa-apple w3-large"></i> <i class="fa fa-windows w3-large"></i>
+      <p><input class="w3-input w3-border" type="text" placeholder="Enter e-mail"></p>
+      <button type="button" class="w3-button w3-block w3-padding-large w3-red w3-margin-bottom" onclick="document.getElementById('download').style.display='none'">Fake Download</button>
+    </div>
+  </div>
+</div>
+
+<!-- Clarity Section -->
+<div class="w3-padding-64">
+  <div class="w3-row-padding">
+    <div class="w3-col l4 m6">
+      <img class="w3-image w3-round-large w3-hide-small" src="assets/anim_volei-removebg-preview.png" alt="App" width="400">
+      <img class="w3-image w3-round-large w3-hide-small" src="assets/images-preview.png" alt="App" width="400">
+      <img class="w3-image w3-round-large w3-hide-small" src="assets/images-removebg-preview.png" alt="App" width="400">
+      <img class="w3-image w3-round-large w3-hide-small" src="assets/39a08195264bfda521137cca5ced9184.png" alt="App" width="400">
+      <img class="w3-image w3-round-large w3-hide-small" src="assets/Untitled-23-01.png" alt="App" width="400">
+
+      
+
+    </div>
+    <div class="w3-col l8 m6">
+      <h1 class="w3-jumbo"><b>ISTORIA PE SCURT A JOCULUI DE VOLEI</b></h1>
+      <h1 class="w3-xxxlarge w3-text-red"><b>Istoria pe ani</b></h1>
+      <p>
+        <p>
+            <span class="w3-xlarge">• 1895:</span> William G. Morgan a creat, în SUA, jocul de volei denumit iniţial „Mintonette”. <br>
+• 1896: Denumirea de „Mintonette” jocului a fost schimbată în „Volley Ball”. <br>
+• 1900: a fost realizată o minge special pentru volei. <br>
+• 1900: prima ţară din afara SUA care a adoptat voleiul a fost Canada. <br>
+• 1908: voleiul ajunge în Japonia. <br>
+• 1912: numărul de jucători din fiecare echipă a fost stabilit la şase şi s-a decis ca jucătorii să se rotească înaintea serviciului. <br>
+• 1914: secretarul YMCA War Office, George Fisher, a inclus voleiul în programele de reconfortare şi educaţie ale Forţelor Armate Americane. <br>
+• 1915: numărul jucătorilor în teren redevine variabil putând fi de la doi la şase pentru fiecare echipă. În Europa voleiul ajunge adus de soldaţii americani care au luptat în primul Război Mondial. Popularitatea sa a crescut rapid, dar jocul a prins rădăcini în special în ţările din Estul Europei unde climatul rece a făcut deosebit de atractive sporturile de sală. Începutul primului război mondial a introdus voleiul în Africa (Egipt). <br>
+• 1916: în Philippines, a fost introdus un stil ofensiv prin care se pasa mingea cu o traiectorie înaltă pentru a fi lovită de alt jucător. <br>
+• 1917: s-a trecut de la 21 la 15 puncte pentru câştigarea unui set. <br>
+• 1918: numărul Jucătorilor pe echipă a fost restabilit la şase. <br>
+• 1919: au fost introduşi 16000 de jucători de volei în Forţele Expediţionare Americane şi în trupele aliate. Acest lucru a fost un stimul al dezvoltării voleiului în afara SUA. <br>
+• 1920: au fost instituite: regula celor trei lovituri pentru o echipă şi atacul din linia a doua. <br>
+• 1923: o echipă trebuia să fie alcătuită din 6 jucători pe teren şi 12 rezerve oficiale iar fiecare jucător trebuia să aibă un tricou numerotat diferit. <br>
+• 1924: crearea Federaţiei de Volei în Cehoslovacia (prima în Europa). <br>
+• 1925: s-a stabilit să fie admise două time-outs-uri pe set pentru fiecare echipă. <br>
+• 1927: ia naştere Federaţia Japoneză de Volei şi se organizează competiţii cu echipe formate din 9 jucători, sistem adoptat şi de China. <br>
+• 1930: s-a jucat pentru prima dată volei pe plajă cu doi jucători. <br>
+• 1933: primul campionat naţional de volei s-a ţinut în URSS unde erau deja 400000 jucători. <br>
+• 1934: s-a creat o „Comisie Tehnică de Volei” în cadrul „Asociaţiei Internaţionale a Sporturilor cu Mingea Jucate cu Mâna”. <br>
+• 1935: atingerea fileului este considerată greşeală. <br>
+• 1938: Cehii au perfecţionat blocajul care a fost oficial introdus în regulament sub denumirea de „o contraacţiune la fileu de unul sau doi jucători alăturaţi”. Timp de aproximativ 20 ani blocajul fusese folosit în joc, dar nu era specificat în regulamente. Cehii, urmaţi la scurt timp de ruşi, au fost primii care au atribuit o importanţă decisivă noii metode care facilita sarcina ingrată de apărare în volei. <br>
+• 1940: William G. Morgan, creatorul jocului de volei a murit la vîrsta de 68 de ani după ce a urmărit cu entuziasm evoluţia jocului pe care la creat. <br>
+• 1942: mingea putea fi jucată cu orice parte a corpului de la genunchi în sus. <br>
+• 1945: primele mărci poştale cu subiect din volei au fost emise în România. <br>
+• 1947: s-au armonizat regulile de joc americane şi europene. Terenul trebuia să măsoare 9×18 m, iar înălţimea fileului era 2,43 m pentru bărbaţi şi 2,24 m pentru femei. În Asia regulile erau diferite: terenul măsura 21,35 x 10,67 m iar fileul era la 2,28 m pentru bărbaţi şi 2,13 m pentru femei. <br>
+• 1947: s-a înfiinţat oficial „Federaţia Internaţională de Volley Ball” (FIVB), având ca prim preşedinte pe francezul Paul Libaud, la Congresul Constitutiv din 18 – 20 aprilie, în Franţa la Paris, la care au participat 14 federaţii naţionale. <br>
+• 1948: la Roma s-a ţinut primul Campionat European de Volei câştigat de Cehoslovacia. După război regulile au fost rescrise şi clarificate pentru a face interpretarea mai uşoară. În special s-a dat o mai bună definiţie blocajului şi serviciul a fost limitat la treimea din dreapta a liniei de fund a terenului. <br>
+• 1948: s-a ţinut primul turneu de volei pe plajă cu doi jucători. <br>
+• 1949: primul Campionat Mondial de volei masculin s-a ţinut la Praga în Cehoslovacia câştigat de URSS. <br>
+• 1951: voleiul era jucat de peste 50 milioane de oameni în peste 60 de ţări. <br>
+• 1952: primul Campionat Mondial de volei feminin s-a ţinut la Moscova în URSS şi a fost câştigat de URSS. <br>
+• 1956: a fost publicat primul număr oficial al Buletinului FIVB. La Paris s-a ţinut primul Campionat într-adevăr mondial la care au participat 24 echipe masculine din 4 continente. Cehoslovacia a câştigat la bărbaţi şi URSS la femei. <br>
+• 1957: s-a luat în considerare introducerea celui de al doilea arbitru, durata time-outs-urilor a fost limitată la un minut şi 30 secunde. În timpul celei de-a 53-a sesiuni a Comitetului Olimpic Internaţional ţinută la Sofia s-a jucat un turneu demonstrativ de volei şi Comitetul Olimpic a stabilit ca jocul de volei să fie introdus ca Joc de Echipă Olimpic la Olimpiada a XVIII-a de la Tokyo din 1964. <br>
+• 1959: Federaţia Internaţională de Sporturi Universitare a introdus primele Jocuri Universitare la Torino în Italia. Jocul de volei era una din cele opt competiţii introduse. <br>
+• 1964: voleiul a fost introdus ca Joc de Echipă Olimpic la Olimpiada de la Tokyo. <br>
+• 1964: japonezii au folosit la Olimpiada de la Tokyo o minge care consta dintr-o carcasă din cauciuc pe care erau lipite bucăţi de piele. O construcţie similară a mingii de volei se utilizează şi în prezent. <br>
+• 1968: Congresul din Mexic a recomandat introducerea antenelor pentru a facilita decizia arbitrilor asupra mingilor care au depăşit liniile laterale. <br>
+• 1969: a luat fiinţă Comisia Antrenorilor. <br>
+• 1971: primele cursuri de antrenori ale FIVB au fost ţinute în Japonia şi Egipt. A luat fiinţă Comisia Medicală a FIVB. <br>
+• 1974: la Congresul FIVB din Mexico City s-a decis aplicarea după 1976 a două modificări: antenele laterale trebuiau mutate la limitele laterale ale terenului, iar după blocaj se admiteau trei atingeri ale mingiei. Campionatele Mondiale de Volei din Mexic au fost televizate şi s-au putut vedea în direct în Japonia. <br>
+• 1980: Congresul al 17-lea al FIVB a adoptat regulile jocului în trei limbi: franceză, engleză şi spaniolă. <br>
+• 1984: a fost ales ca preşedinte al FIVB mexicanul Rubén Acosta Hernandez, iar sediul FIVB s-a mutat de la Paris, Franţa, la Lausanne, Elveţia şi a fost intensificată politica de promovare a voleiului în bazele sportive din toată lumea. <br>
+• 1988: FIVB a inaugurat noul sediu de la Lausanne. <br>
+• 1995: jocul de volei a împlinit 100 de ani. Evenimentul a fost comemorat în toată lumea prin ceremonii, turnee, emitere de timbre. FIVB a sărbătorit evenimentul organizând ciclul de evenimente „100 ani de volei în 100 de zile” constând dintr-o serie de manifestări şi editarea unei magnifice cărţi cu titlul „100 de ani de legătură globală”. A apărut site-ul http://www.voleyball.com <br>
+• 1996: voleiul pe plajă cu doi jucători a fost introdus ca Sport Olimpic. <br>
+• 2000: s-a trecut de la 15 la 25 puncte pentru câştigarea unui set. S-a acordat titlul de cel mai bun antrenor de volei al secolului XX lui Yasutaka Matsudaira din Japonia la volei masculin pentru perioada 1964 – 1974 şi la volei feminin lui Eugenio George din Cuba pentru perioada 1990 – 2000.
+• 2001: FIVB are afiliate 218 federaţii naţionale. <br>
+        </p>
+    </div>
+  </div>
+</div>
+
+<!-- Features Section -->
+<div class="w3-container w3-padding-64 w3-dark-grey w3-center">
+  <h1 class="w3-jumbo"><b>Volei</b></h1>
+  <p> <em>Asta e esența sportului: să mergi până la propriile limite și să vezi dacă ești în stare să treci dincolo de ele.</em><br> - Pascal Bruckner</p>
+
+  <div class="w3-row" style="margin-top:64px">
+    <div class="w3-col s3">
+      <i class="fa fa-bolt w3-text-orange w3-jumbo"></i>
+      <p>Viteza</p>
+    </div>
+    <div class="w3-col s3">
+      <i class="fa fa-heart w3-text-red w3-jumbo"></i>
+      <p>Pasiune</p>
+    </div>
+    <div class="w3-col s3">
+      <i class="fa fa-battery-full w3-text-green w3-jumbo"></i>
+      <p>Energie</p>
+    </div>
+    <div class="w3-col s3">
+        <i class="fa fa-globe w3-text-amber w3-jumbo"></i>
+        <p>Oriunde</p>
+      </div>
+  </div>
+</div>
+
+
+<!-- Footer -->
+<footer class="w3-container w3-padding-32  w3-center w3-xlarge">
+  <div class="w3-section">
+
+  </div>
+</footer>
+
+<script>
+// Slideshow
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  if (n > x.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  x[slideIndex-1].style.display = "block";  
+}
+</script>
+
+</body>
 </html>
